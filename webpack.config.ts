@@ -20,6 +20,9 @@ const config: webpack.Configuration = {
         {
           from: 'node_modules/webextension-polyfill/dist/browser-polyfill.js',
         },
+        {
+          from: 'manifest.json',
+        }
       ],
     }),
   ],
