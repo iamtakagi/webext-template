@@ -15,7 +15,7 @@
     "test": "jest",
     "bundle": "webpack --config webpack.config.ts --mode production",
     "pack": "cd dist && zip ../builds/$(date +%Y%m%d_%H%M%S).zip *.*",
-    "build": "cp manifest.json dist && pnpm bundle && cd dist && zip ../builds/$(date +%Y%m%d_%H%M%S).zip *.*"
+    "build": "cp manifest.json dist && pnpm run bundle && cd dist && pnpm run pack"
   },
   "eslint": {
     "extends": [
