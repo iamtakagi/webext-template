@@ -6,12 +6,6 @@
 pnpm install
 ```
 
-## Build
-
-```sh
-pnpm run build
-```
-
 ## License
 
 MIT.
