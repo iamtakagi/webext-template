@@ -5,7 +5,7 @@ const main = async (currentURL: string = location.href) => {
   }
 };
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('load', () => {
   main().catch(e => {
     console.error(e);
   });
