@@ -1,0 +1,16 @@
+{
+  "name": "",
+  "author": "iamtakagi",
+  "manifest_version": 2,
+  "version": "0.0.0",
+  "description": "",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://google.co.jp"],
+      "js": ["content.js"],
+      "run_at": ""
+    }
+  ],
+  "web_accessible_resources": ["inject.js"]
+}
