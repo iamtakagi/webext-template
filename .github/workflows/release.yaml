@@ -21,7 +21,7 @@ jobs:
         with:
           node-version: 18
           cache: pnpm
-      - run: pnpm run install
+      - run: pnpm install
       - run: pnpm run bundle
       - name: Zip Folder
         run: zip -jr ${{ env.REPOSITORY_NAME }}-${{ github.event.release.tag_name }}.zip ./dist/*
