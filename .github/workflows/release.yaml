@@ -22,7 +22,7 @@ jobs:
           node-version: 18
           cache: pnpm
       - run: pnpm install
-      - run: pnpm run bundle
+      - run: pnpm run bundle:production
       - name: Zip Folder
         run: zip -jr ${{ env.REPOSITORY_NAME }}-${{ github.event.release.tag_name }}.zip ./dist/*
       - name: Upload a Build Artifact
