@@ -14,9 +14,9 @@
     "lintfix:eslint": "pnpm run lint:eslint --fix",
     "test": "jest",
     "bundle:production": "cross-env NODE_ENV=production webpack --config webpack.config.ts --mode production",
-    "bundle:devlopment": "cross-env NODE_ENV=development webpack --config webpack.config.ts --mode development",
-    "pack:devlopment": "cd dist && zip ../builds/$(date +%Y%m%d_%H%M%S).zip *.*",
-    "build:devlopment": "cp manifest.json dist && pnpm run bundle:dev && cd dist && pnpm run pack:dev"
+    "bundle:development": "cross-env NODE_ENV=development webpack --config webpack.config.ts --mode development",
+    "pack:development": "cd dist && zip ../builds/$(date +%Y%m%d_%H%M%S).zip *.*",
+    "build:development": "pnpm run bundle:development && cd dist && pnpm run pack:development"
   },
   "eslint": {
     "extends": [
