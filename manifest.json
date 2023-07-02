@@ -17,7 +17,7 @@
       "inject.js"
     ],
     "matches": [
-      "https://google.co.jp/"
+      "https://google.co.jp/*"
     ]
   }]
 
