@@ -12,6 +12,7 @@
     "lint:prettier": "prettier --check \"**/*.{js,ts,tsx,css,json,yaml,md}\"",
     "lintfix": "run-s 'lintfix:*' 'format'",
     "lintfix:eslint": "pnpm run lint:eslint --fix",
+    "test": "jest",
     "bundle": "webpack --config webpack.config.ts --mode production",
     "pack": "cd dist && zip ../builds/$(date +%Y%m%d_%H%M%S).zip *.*",
     "build": "cp manifest.json dist && pnpm bundle && cd dist && zip ../builds/$(date +%Y%m%d_%H%M%S).zip *.*"
