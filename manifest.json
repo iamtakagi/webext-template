@@ -7,7 +7,7 @@
   "permissions": [],
   "content_scripts": [
     {
-      "matches": ["https://google.co.jp"],
+      "matches": ["https://google.co.jp/"],
       "js": ["content.js"],
       "run_at": "document_end"
     }
