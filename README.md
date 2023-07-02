@@ -9,7 +9,7 @@ pnpm install
 ## Build
 
 ```sh
-pnpm build
+pnpm run build
 ```
 
 ## License
